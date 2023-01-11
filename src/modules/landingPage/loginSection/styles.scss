@@ -1,0 +1,59 @@
+@import '~sass/abstracts/variables';
+
+.login {
+    background: linear-gradient(
+        to right bottom,
+        rgba(113, 125, 214, 0.795) 30%, 
+        rgba(250, 123, 229, 0.788) 100%
+    );
+    background-size: cover;
+    background-position: top;
+    margin-top: -20vh;
+    height: 75vh; // jeigu registration = true, turėtų plotis būti didesnis
+    clip-path: polygon(0 30%, 100% 1%, 100% 76%, 0 99%);
+    
+    .header-secondary {
+        display: flex;
+        justify-content: center;
+        padding-top: 15vh;
+        padding-bottom: 3vh;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 24px;
+    }
+
+    .form {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+
+        .form-input-fields {
+            width: 30vw;
+            padding-bottom: 3vh;
+        }
+    }
+
+
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
